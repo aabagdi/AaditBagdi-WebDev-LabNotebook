@@ -7,10 +7,54 @@
     <title>Exercise 04 - Form</title>
   </head>
   <body>
-    <main>
-      <form action="/submit">
-        <!-- Add your code here -->
-      </form>
-    </main>
+    <h1>Form</h1>
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Full Name" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="name@pdx.edu" />
+      </div>
+
+      <fieldset>
+        <legend>Favorite Character:</legend>
+        <div class="radio-group">
+          <label class="radio-label">
+            <input type="radio" name="character" value="spongebob" />
+            Spongebob
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="character" value="sandy" />
+            Sandy
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="character" value="patrick" />
+            Patrick
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Are you a fan of the show?</legend>
+        <div class="checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" name="fan" value="watched" />
+            Yes, I have watched all episodes!
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="fan" value="memes" />
+            Yes, it's got the best memes.
+          </label>
+        </div>
+      </fieldset>
+
+      <div class="button-group">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
   </body>
 </html>
