@@ -1,21 +1,85 @@
 /* CSS custom properties / CSS variables */
-
 :root {
-  --darkmagenta: #8b008b;
+  --purple: #800080;
+  --green: #008000;
+  --blue: #0000ff;
   --magenta: #ff00ff;
-  --royalblue: #4169e1;
-  --teal: #008080;
-  --violet: #9400d3;
+  --greenblue: #008c8c;
 }
 
 /* Use attribute selectors for the first part of the exercise */
 
-li[class] {
-  color: var(--red);
+li[class="dog"] {
+  color: var(--magenta);
+}
+
+li[id="cat"] {
+  color: var(--greenblue);
+}
+
+li[class="parrot"] {
+  color: var(--green);
+}
+
+li[class="donkey"] {
+  color: var(--blue);
+}
+
+li[class="hedgehog"] {
+  color: var(--magenta);
+}
+
+li[class="cat dog parrot"] {
+  color: var(--blue);
 }
 
 /* Use descendant, child, and sibling selectors for the second part */
 
-section li {
+.food-list li {
+  color: inherit;
+}
+
+.food-list li:nth-child(1) {
+  color: var(--green);
+}
+
+.food-list li:nth-child(2) {
+  color: var(--magenta);
+}
+
+.food-list li:nth-child(3) {
+  color: var(--blue);
+}
+
+.food-list li:nth-child(4) {
+  color: var(--magenta);
+}
+
+.cleaning-list li {
+  color: var(--green);
+}
+
+/* Parent and Sibling Selectors for the shopping lists */
+.list-food ol li {
+  color: inherit;
+}
+
+.list-food ol li.first {
+  color: var(--green);
+}
+
+.list-food ol li.second {
+  color: var(--magenta);
+}
+
+.list-food ol li:nth-child(3) {
+  color: var(--blue);
+}
+
+.list-food ol li:nth-child(4) {
+  color: var(--magenta);
+}
+
+.list-cleaning ol li {
   color: var(--green);
 }

@@ -7,12 +7,40 @@
     <title>Exercise 03 - Bootstrap Grid</title>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../_styles/styles.css" />
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <h1>03 - Bootstrap Grid</h1>
-    <!-- Add your code here -->
+    <div class="container">
+      <!-- First row - One spans full width on all screens -->
+      <div class="row">
+        <div class="col-12 box">One</div>
+      </div>
+
+      <!-- Second row - Two spans full width on all screens -->
+      <div class="row">
+        <div class="col-12 box">Two</div>
+      </div>
+
+      <!-- Third row - Three and Four have different layouts based on screen size -->
+      <div class="row">
+        <!-- Three takes 75% on medium/larger screens, full width on small screens -->
+        <div class="col-12 col-md-9 box">Three</div>
+        <!-- Four takes 25% on medium/larger screens, full width on small screens -->
+        <div class="col-12 col-md-3 box">Four</div>
+      </div>
+
+      <!-- Fourth row - Five, Six, Seven have different layouts based on screen size -->
+      <div class="row">
+        <!-- Five takes full width on small, 50% on medium, 50% on large -->
+        <div class="col-12 col-md-6 col-lg-6 box">Five</div>
+        <!-- Six takes 50% width on small, 50% on medium, 25% on large -->
+        <div class="col-6 col-md-6 col-lg-3 box">Six</div>
+        <!-- Seven takes 50% width on small, full width on medium, 25% on large -->
+        <div class="col-6 col-md-12 col-lg-3 box">Seven</div>
+      </div>
+    </div>
   </body>
 </html>
