@@ -20,6 +20,10 @@ form > * {
   justify-content: center;
 }
 
+.card-text {
+  color: #000000;
+}
+
 /* Assign colors to each box */
 .box:nth-child(1) {
   background-color: #6a0dad; /* Dark Purple */

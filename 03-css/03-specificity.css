@@ -1,25 +1,31 @@
 /* Specificity Exercise */
 
+/* Specificity: (0,0,1,2) - 1 class, 2 elements */
 nav .list-item > a {
   color: var(--purple);
 }
 
+/* Specificity: (0,1,0,1) - 1 ID, 1 pseudo-element */
 #main::first-letter {
   color: var(--purple);
 }
 
+/* Specificity: (0,0,1,1) - 1 attribute, 1 element */
 input[type] {
   color: var(--purple);
 }
 
+/* Specificity: (0,0,1,2) - 1 class, 1 element, 1 pseudo-element */
 section .main::first-line {
   color: var(--purple);
 }
 
+/* Specificity: (0,1,2,4) - 1 ID, 1 class, 1 pseudo-class, 1 attribute inside :not, 4 elements */
 nav ul.menu li#first a:not([class='visited']) {
   color: var(--purple);
 }
 
+/* Specificity: (0,0,0,10) - 10 elements */
 div ol li ul li ol li ul li a {
   color: var(--purple);
 }
