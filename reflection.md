@@ -10,4 +10,4 @@ The exercise was fairly straightforward. I was able to finish everything by myse
 The CSS exercises were a little harder than the HTML ones. I was able to finish most of them, but for some of them (the Flexbox and CSS Grid ones), I got a bit of help from Claude 3.5. I found it a little challenging due to me having to miss class due to health problems. The other ones were pretty straightforward and I used only the class resources to complete them.
 
 ### JavaScript
-These were very straightforward to me. I finished these without any help. I found the API fetching one pretty interesting, not because it was hard, but because of it being different compared to my main language, Swift. I decided to make it a bit fancier and added the loading gif in the assets as a loading indicator.
+These were very straightforward to me. I finished these without any help. I found the API fetching one pretty interesting, not because it was hard, but because of it being different compared to my main language, Swift.
