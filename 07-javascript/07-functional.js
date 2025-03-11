@@ -35,8 +35,6 @@ const filterFamily = (characters, house) => {
 const reduceHouses = (characters) => {
   // Return an object with the number of characters from each house
   return characters.reduce((houseCounts, character) => {
-    // If the house exists in the accumulator, increment the count
-    // Otherwise, initialize it to 1
     if (houseCounts[character.house]) {
       houseCounts[character.house]++;
     } else {
